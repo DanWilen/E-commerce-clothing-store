@@ -1,0 +1,89 @@
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>This is our app cart called DT sports</p>
+    <p>We've built this app during this summer as our final project at Web Application Course</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="https://scontent.fsdv1-2.fna.fbcdn.net/v/t1.18169-9/12072666_10153648026917311_6229846991972585837_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=tea19yVCx-oAX-jQ3rE&_nc_ht=scontent.fsdv1-2.fna&oh=ed56cbb3c96ec9c7b467ceee5c30ea9b&oe=61554EFE" alt="Jane" style="width:100%">
+            <div class="container">
+                <h2>Dan Wilensky</h2>
+                <p class="title">CS student at IDC</p>
+                <p>I'm 25, living in Herzliya. my main field at CS is Full Stack dev.</p>
+                <p>dan.wilensky1995@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="https://scontent.fsdv1-2.fna.fbcdn.net/v/t31.18172-8/18319215_1419182174811767_8798441269269286705_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xSY6O8jAsN4AX9cy_rI&_nc_ht=scontent.fsdv1-2.fna&oh=c92e80b1560dcf8433cf6f7d19150390&oe=6152D840" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Jonathan Erell</h2>
+                <p class="title">CS student at IDC</p>
+                <p>I'm 25, living in Ramat Hasharon. my main field at CS is ML</p>
+                <p>tani.erell@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+</div>

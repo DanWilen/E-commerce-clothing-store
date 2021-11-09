@@ -1,0 +1,64 @@
+<h1>This is ReadmeFile</h1>
+<p>
+    Brand name: DT SPORTS <br>
+    What we sell: we sell sport merchandise, as an admin you can add whatever item you want
+</p>
+
+<p> Steps in order to run our app:
+<ul> 1. run mongo on your terminal </ul>
+<ul> 2. to activate our db type at terminal: <br>
+    <ul> * use db.shopping <br> </ul>
+    <ul> * use shopping </ul>
+    <ul> * now you have two collection on DB: users and products - one can see what they contain with the query db.products.find() for example
+</ul>
+<ul> 3. enter on another terminal tab (from IDE or local) to the app folder </ul>
+<ul> 4. run "npm install" and "npm i mongoose" </ul>
+<ul> 5. Enter the seed folder (cd seed) and run node product-seeder.js to activate the shop</ul>
+<ul> 6. run npm start and go to port localhost:3000</ul>
+<br>
+<p><strong>to get into the admin, sign in as admin@admin.com and enter any password you want.<br>
+our code will automatically recognise this user as admin  </strong></p>
+
+<p> The extra pages we've added are: </p>
+<ul> 1. on shopping cart a a client can take action and remove or reduce items </ul>
+<ul> 2. each client can see details of all his purchases history (at user management) </ul>
+<ul> 3. add items to the web options, if you are logged as admin </ul>
+<ul> 4. about us page showing some details about our work </ul>
+<br>
+<p> the 3 main Difficulties through developing the web: </p>
+<ul> Implementing the cookies was extremely hard </ul>
+<ul> Connecting the app to the database took a lot of effort </ul>
+<ul> The security side was hard to grasp, we needed to read a lot of article until we were able to achieve this goal </ul>
+<br>
+<div>
+    <table>
+        <tr>
+            <td>
+                Dan Wilensky, ID: 313596637 - Dan worked at most on building the DB, creating registration, login and checkouts with cookies and connecting it to the server
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Jonathan Erell, ID: 207044447 - Jonathan worked on the frontend of the store, and the functionality of it
+            </td>
+        </tr>
+        <tr>
+            <td>
+                For all the admin part, the defense from DOS attacks and the functionality inside the store we have been working together.
+            </td>
+        </tr>
+
+    </table>
+</div>
+<br><p><strong>Routes are:</strong>  </p>
+<li> /addToCart/:id which adds item to cart by his ID </li>
+<li> /reduce/:id which reduces item from cart by his ID </li>
+<li> /remove/:id which removes item from cart by his ID </li>
+<li> /shopping-cart which shows the shopping cart </li>
+<li> /about shows the about us page </li>
+<li> /checkout checks out the cart items with Visa Card or MasterCard - Get Method </li>
+<li> /addProduct adding product screen- activity available for admin only </li>
+<li> /profile shows the profile per user session</li>
+<li> /logout logout and clear session</li>
+<li> /signup register user - Get Method</li>
+<li> /signin login user - Get Method</li>
